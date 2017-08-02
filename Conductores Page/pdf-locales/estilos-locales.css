@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*-------------Header-------------*/
+.header {
+    height: 60px;
+    background: #202020;
+    
+}
+
+.header .contenedor {
+    display:flex;
+}
+
+.icon_menu   {
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 60px;
+    left:-100%;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    max-width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    
+}
+
+.menu_link {
+    display: block;
+    padding: 7px;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.show {
+    left:0;
+}
+
+/*-------------Section 01-------------*/
+
+
+
+#contenedor .info #columna2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.info_columna {
+   
+    padding: 15px;
+}
+
+.info {
+     background: #4f5051;
+}
+
+.info_columna .info_txt {
+    color: #fff;
+}
+
+.info_columna #container img {
+    max-width: 100%;
+    height: 80px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+   
+}
+
+.info_columna #lista_locales img {
+    max-width: 100%;
+    height: 40px;
+  
+    
+   
+}
+
+.info_columna #lista_locales {
+    padding: 15px;
+}
+
+
+.info_columna #container {
+    display: flex;
+    
+    
+}
+
+.info_columna #container #text_derecho {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.info_columna h2 {
+    color: #ffc90d;
+    margin-bottom: 10px;
+}
+
+.info_columna h3 {
+    font-size: 20pt;
+}
+
+.info_columna h3,  li {
+    color: #fff;
+}
+
+.info ul li {
+    list-style: none;
+    line-height: 20px;
+    padding: 5px;
+}
+
+#columna2 #container2 img {
+    height: 45px;
+    max-width: 100%;
+    padding:5px;
+}
+
+#columna2 p {
+    color: #ffc90d;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#columna2 #container2 {
+    display: flex
+}
+
+/*-------------Section 02-------------*/
+
+.info_columna2 .container {
+    background: #4f5051;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.info_columna2 p {
+    color: #fff;
+    line-height: 20px;
+}
+
+.info_columna2 h3 {
+    color: #ffc90d;
+    padding: 5px;
+}
+
+.info_columna2 img {
+    max-height:  120px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.info_columna2 {
+    margin-bottom: 10px;
+}
+
+/*-------------Section 03-------------*/
+
+.info_columna3 p {
+    padding: 5px;
+    line-height: 20px;
+}
+
+.info_columna3 h3 {
+    color: #ffc90d;
+    padding: 5px;
+}
+.info3 img {
+    max-height: 300px;
+}
+
+.info3 {
+    background: #efefef;
+    padding: 10px;
+}
+
+/*-------------Footer-------------*/
+
+.footer {
+    background: #202020;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*------------- ESTILOS DE MEDIDAS-------------*/
+
+@media (min-width:480px){
+    .info, .info2, .info3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .info_columna2 {
+        width: 32%;
+        
+    }
+    #columna2 {
+        padding-left: 10px;
+    }
+    .info_columna2 .container {
+        height: 190px;
+    }
+    .info3 article {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .info3 h3 {
+        font-size: 20pt;
+    }
+}
+
+@media (min-width:768px){
+    #contenedor img{
+        padding-top: 20px;
+        height: 2500px;
+        margin: auto;
+    }
+   
+}
+
+@media (min-width:1024px){
+    #contenedor {
+        width: 1000px;
+    }
+    
+    .contenedor {
+        width: 1000px;
+        margin: auto;
+    }
+    .nav {
+        position:static;
+        width: auto;
+        margin: auto;
+        
+    }
+    .icon_menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        padding-bottom: 15px;
+    }
+    .menu_link {
+        background: none;
+    }
+    .logo {
+        height: 80px;
+    }
+    .info {
+        padding-top: 30px;
+    }
+    .info_columna2 .container {
+        height: 140px;
+    }
+    .info #container img {
+        height: 100px;
+    }
+    #text_derecho {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+   #container2 p {
+        font-size: 15pt;
+       
+    }
+    
+    
+}
